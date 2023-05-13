@@ -3,7 +3,7 @@
 size_t _count=0;
 
 class ListNode 
-{ xs
+{ 
     public:
         ListNode(const double data)
         {
@@ -86,6 +86,10 @@ class List {
                 insertAtFront(value);
                 _count++;
                 return true;
+            }
+            else
+            {
+                std::cout << "Incorrect index" << std::endl;
             }
             return false;
         };
